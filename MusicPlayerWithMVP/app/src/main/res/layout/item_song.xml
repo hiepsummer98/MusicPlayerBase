@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_song"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:background="@drawable/item_song_selector"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/ic_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:lines="1"
+        android:text="Name song"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@id/tv_singer"
+        app:layout_constraintLeft_toRightOf="@id/img_thumb"
+        app:layout_constraintTop_toTopOf="@id/img_thumb" />
+
+    <TextView
+        android:id="@+id/tv_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Anan"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/img_thumb"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+</android.support.constraint.ConstraintLayout>
